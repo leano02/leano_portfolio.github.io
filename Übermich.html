@@ -14,29 +14,37 @@
             color: #222;
         }
         
-        header { 
-             background-color: #222;
+        header {
+            background-color: #222;
             color: white;
             padding: 20px;
             position: fixed; 
             top: 0;
             left: 0;
             width: 100%;
+            text-align: center; /* Neu */
         }
 
         header h1 {
             margin: 0;
         }
 
-        nav {
+       nav {
             margin-top: 10px;
+            display: flex;
+            gap: 30px;
+            justify-content: center;
         }
-        
-        header nav a {
+
+        nav a {
             color: white;
             text-decoration: none;
-            margin-right: 20px;
             font-weight: bold;
+        }
+
+        nav a:hover {
+            transition: all 0.3s ease;
+            transform: scale(1.07);
         }
         
         main {
@@ -63,6 +71,7 @@
             background-color: cadetblue;
             padding: 15px;
             border-radius: 10px;
+             box-shadow: 0 0 20px rgb(116, 10, 255);
         }
 
         .ziel {
@@ -87,6 +96,7 @@
             background-color: lightsalmon;
             padding: 15px;
             border-radius: 10px;
+             box-shadow: 0 0 20px rgb(116, 10, 255);
         }
 
         .stärken {
@@ -110,6 +120,7 @@
             background-color: rgba(43, 255, 0, 0.658);
             padding: 15px;
             border-radius: 10px;
+             box-shadow: 0 0 20px rgb(116, 10, 255);
         }
 
         footer {
@@ -173,3 +184,4 @@
 </body>
 
 </html>
+
