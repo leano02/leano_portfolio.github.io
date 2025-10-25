@@ -1,0 +1,212 @@
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(5px);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+            color: #ffffff;
+            padding-top: 20px;
+            position: fixed; 
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+        }
+        header h1 {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: clamp(20px, 8vw, 60px);
+            color: #ffffff;
+        }
+
+        header h1 a {
+            color:white;
+            text-decoration: none;
+        }
+
+        header h1 a:hover {
+            transition: all 0.3s ease;
+            transform: scale(1.07);
+        }
+
+        nav {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: clamp(12px, 4vw, 20px);
+        }
+
+        nav a::after {
+            content: '';
+            display: block;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px; /* Dicke des Unterstrichs */
+            background-color: #3700ff; /* Farbe des Unterstrichs */
+            transition: width 0.3s ease; /* Animation */
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        main {
+            margin-top: 150px;
+            padding: 20px;
+        }
+
+        main { margin-top: clamp(140px, 10vw, 200px); }
+        /* für interne Sprunglinks */
+        html { scroll-padding-top: 140px; }
+
+        .vorstellung {
+            background-color: #1a1a1a;
+            padding: 20px;
+            margin: 20px auto; /* Zentriert horizontal */
+            border-radius: 10px;
+            max-width: 700px;
+            text-align: center; 
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease; 
+            }
+
+        .vorstellung:hover {
+            box-shadow: 0 0 15px rgba(183, 124, 255, 0.3);
+            transform: scale(1.02);
+        }
+
+        .mitmachen {
+            background-color: #1a1a1a;
+            padding: 20px;
+            margin: 20px auto; /* Zentriert horizontal */
+            margin-top: 30px;
+            border-radius: 10px;
+            max-width: 700px;
+            text-align: center; 
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease; 
+        }
+
+        .mitmachen:hover {
+            box-shadow: 0 0 15px rgba(183, 124, 255, 0.3);
+            transform: scale(1.02);
+        }
+
+        .standort {
+            background-color: #1a1a1a;
+            padding: 20px;
+            margin: 20px auto; /* Zentriert horizontal */
+            margin-top: 30px;
+            border-radius: 10px;
+            max-width: 700px;
+            text-align: center; 
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease; 
+        }
+
+        .standort:hover {
+            box-shadow: 0 0 15px rgba(183, 124, 255, 0.3);
+            transform: scale(1.02);
+        }
+        
+         footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 10px; 
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            margin-top: 50px;
+            border-top: 1px solid #2a2a2a;
+            box-shadow: 0 -3px 10px rgba(55,0,255,0.3);
+        }
+
+        h2 { 
+            color: #b87cff; font-size: clamp(20px, 4.5vw, 32px); margin-bottom: 8px;
+        }
+
+        p {
+            color:#d1d1d1; line-height:1.6; 
+        }
+
+        @media (max-width:768px) {
+        main { padding: 16px; }
+        .vorstellung, .mitmachen, .standort { margin: 16px 8px; padding: 18px; }
+        h2::after { width: 40px; }
+        }
+
+        .anmeldung {
+            background-color: #1a1a1a;
+            padding: 20px;
+            margin: 20px auto; /* Zentriert horizontal */
+            border-radius: 10px;
+            max-width: 600px;
+            text-align: center; 
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .cta {
+            display:inline-block;
+            padding:10px 18px;
+            margin: 0 auto;
+            background:linear-gradient(90deg,#b87cff,#3700ff);
+            color:#000;
+            max-width: 300px;
+            border-radius:8px;
+            font-weight:700;
+            transition: all 0.3s ease; 
+            }
+
+        .cta:hover { 
+            transform:translateY(-3px); box-shadow:0 8px 20px rgba(55,0,255,0.18); 
+            }
+
+              .back-to-portfolio {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background: linear-gradient(135deg, #ff0066, #ff6600);
+                color: white;
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 14px;
+                padding: 12px 16px;
+                border-radius: 50px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+                transition: all 0.3s ease;
+                z-index: 999;
+            }
+
+            .back-to-portfolio:hover {
+                transform: scale(1.1);
+                box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+                background: linear-gradient(135deg, #ff6600, #ff0066);
+            }
+
+            html, body {
+            overflow-x: hidden;
+        }
+
+
+

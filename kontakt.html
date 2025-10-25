@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kontakt</title>
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            background: #3F5EFB;
+            background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(164, 81, 174, 1) 53%, rgba(255, 0, 64, 1) 100%);
+            color: #222;
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            position: fixed; 
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+
+        main {
+            margin-top: 100px; 
+            padding: 20px;
+        }
+
+
+        .kontakt {
+            text-align: center;
+            display: flex; 
+            gap: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 15px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .kontakt div {
+            flex: 1; 
+            background-color: cadetblue;
+            padding: 15px;
+            border-radius: 10px;
+        
+            
+        }
+        .kontakt h2 {
+            margin: 0;
+            text-align: center;
+        }
+
+        .bilder {
+            display: flex;
+            justify-content: center; /* Zentriert die Icons horizontal */
+            align-items: center;
+            gap: 40px; /* Abstand zwischen den Logos */
+            margin-top: 30px; /* Abstand nach oben zur Box */
+            flex-wrap: wrap; /* sorgt dafür, dass sie auf kleinen Bildschirmen umbrechen */
+        }
+
+        .bilder img {
+            width: 80px;        /* Größe der Logos */
+            height: auto;       /* Höhe passt sich automatisch an */
+            border-radius: 15px; /* Runde Ecken */
+            transition: transform 0.2s ease; /* für einen kleinen Hover-Effekt */
+        }
+
+        .bilder img:hover {
+            transform: scale(1.1); /* Vergrößert leicht beim Darüberfahren */
+        }
+
+        footer {
+            
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Leano's Portfolio</h1>
+        <nav>
+            <a href="Portfolio.html">Start</a>
+            <a href="Übermich.html">Über mich</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+    </header>
+    <main>
+        <section class="kontakt">
+            <div class="text">
+                <h2>Kontakt</h2>
+                <p>
+                    Du möchtest eine Webseite für dich oder dein Unternehmen erstellen lassen?
+                    Vielleicht möchtest du auch einfach mit dem Programmieren anfangen oder hast Fragen dazu.
+                    Dann melde dich gerne bei mir. Du kannst mir gerne eine E-mail schreiben oder einfach eine DM auf Instagram senden.
+                    Ich freue mich darauf, von dir zu hören!
+                </p>
+            </div>
+        </section>
+
+        <section class="bilder">
+            <a href="mailto:leanograthwohl1@gmail.com"><img src="gmail.jpg"></a>
+            <a href="https://www.instagram.com/leano_02?igsh=MTV2aHg1d3p1cWZIYw%3D%3D&utm_source=qr"><img src="instagram.jpeg"></a>
+            <a href="https://www.snapchat.com/t/QA6QwFt4"><img src="snapchat.jpg"></a>
+        </section>
+</main>
+    <footer>
+        <p>&copy; 2025 Leano's Portfolio</p>
+    </footer>
+        
+</body>
+</html>
