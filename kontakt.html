@@ -6,6 +6,10 @@
     <title>kontakt</title>
     
     <style>
+        html {
+            overflow-y: scroll; /* Erzwingt immer eine Scrollbar, auch wenn sie leer ist */
+        }
+
         body {
             margin: 0;
             font-family: 'Times New Roman', Times, serif;
@@ -22,28 +26,35 @@
             top: 0;
             left: 0;
             width: 100%;
+            text-align: center; /* Neu */
         }
 
         header h1 {
             margin: 0;
         }
 
+        main{
+            margin-top: 100px; 
+            padding: 20px;
+        }
+        
         nav {
             margin-top: 10px;
+            display: flex;
+            gap: 30px;
+            justify-content: center;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin-right: 20px;
             font-weight: bold;
         }
 
-        main {
-            margin-top: 100px; 
-            padding: 20px;
+        nav a:hover {
+            transition: all 0.3s ease;
+            transform: scale(1.07);
         }
-
 
         .kontakt {
             text-align: center;
@@ -61,7 +72,7 @@
             background-color: cadetblue;
             padding: 15px;
             border-radius: 10px;
-        
+             box-shadow: 0 0 20px rgb(116, 10, 255);
             
         }
         .kontakt h2 {
@@ -82,11 +93,12 @@
             width: 80px;        /* Größe der Logos */
             height: auto;       /* Höhe passt sich automatisch an */
             border-radius: 15px; /* Runde Ecken */
-            transition: transform 0.2s ease; /* für einen kleinen Hover-Effekt */
+            transition: all 0.2s ease; /* für einen kleinen Hover-Effekt */
         }
 
         .bilder img:hover {
             transform: scale(1.1); /* Vergrößert leicht beim Darüberfahren */
+            box-shadow: 0 0 20px rgb(0, 0, 0);
         }
 
         footer {
@@ -100,8 +112,6 @@
             left: 0;
             width: 100%;
         }
-
-
     </style>
 </head>
 <body>
@@ -139,3 +149,4 @@
 </body>
 
 </html>
+
